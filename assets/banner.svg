@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="50%" stop-color="#161b22" />
+      <stop offset="100%" stop-color="#0d1117" />
+    </linearGradient>
+
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Background dynamic moving flow lines -->
+    <style>
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+        100% { transform: translateY(0px); }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 0.25; }
+        50% { opacity: 0.65; }
+      }
+      @keyframes dash {
+        to { stroke-dashoffset: -40; }
+      }
+      .animated-bg-line {
+        stroke-dasharray: 8 12;
+        animation: dash 3s linear infinite;
+      }
+      .floating-card {
+        animation: float 6s ease-in-out infinite;
+      }
+      .pulsing-glow {
+        animation: pulse 4s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background base -->
+  <rect width="1200" height="320" fill="url(#bg)" rx="12" />
+  
+  <!-- Subtle Glowing Orbs in Background -->
+  <circle cx="150" cy="80" r="180" fill="url(#glow)" class="pulsing-glow" />
+  <circle cx="1050" cy="240" r="200" fill="url(#glow)" class="pulsing-glow" />
+
+  <!-- Background Dynamic Schematics (Layered safely behind text) -->
+  <g opacity="0.15">
+    <path d="M 100 260 L 300 260 L 400 180 L 700 180" fill="none" stroke="#60a5fa" stroke-width="2" class="animated-bg-line" />
+    <path d="M 800 60 L 950 60 L 1050 140 L 1150 140" fill="none" stroke="#a78bfa" stroke-width="2" class="animated-bg-line" />
+    <circle cx="300" cy="260" r="4" fill="#60a5fa" />
+    <circle cx="400" cy="180" r="4" fill="#60a5fa" />
+    <circle cx="950" cy="60" r="4" fill="#a78bfa" />
+    <circle cx="1050" cy="140" r="4" fill="#a78bfa" />
+  </g>
+
+  <!-- Decorative Border Line at Top -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)" />
+
+  <!-- Main Foreground Content -->
+  <g text-anchor="middle">
+    <!-- Icon / Graphic Symbol -->
+    <g transform="translate(600, 75)">
+      <!-- Database Stack Icon with Migration Arrow -->
+      <path d="M -30 -20 C -30 -30 30 -30 30 -20 C 30 -10 -30 -10 -30 -20 Z" fill="none" stroke="#38bdf8" stroke-width="3" />
+      <path d="M -30 -20 L -30 10 C -30 20 30 20 30 10 L 30 -20" fill="none" stroke="#38bdf8" stroke-width="3" />
+      <path d="M -30 0 C -30 10 30 10 30 0" fill="none" stroke="#38bdf8" stroke-width="3" />
+      <path d="M -30 10 L -30 40 C -30 50 30 50 30 40 L 30 10" fill="none" stroke="#38bdf8" stroke-width="3" />
+      <path d="M -30 25 C -30 35 30 35 30 25" fill="none" stroke="#38bdf8" stroke-width="3" />
+      
+      <!-- Right Migration Flow Arrow -->
+      <path d="M 45 10 L 75 10 M 65 2 L 75 10 L 65 18" fill="none" stroke="#a78bfa" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+
+    <!-- Title -->
+    <text x="600" y="165" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="800" font-size="38" fill="#ffffff" letter-spacing="0.5">
+      Awesome Database Schema Migration 🚀
+    </text>
+
+    <!-- Subtitle -->
+    <text x="600" y="210" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="500" font-size="18" fill="#94a3b8" letter-spacing="0.2">
+      Curated List of Schema Migration Tools, Declarative Schema-as-Code &amp; Database CI/CD Platforms
+    </text>
+
+    <!-- Tag Pills / Badges in Foreground -->
+    <g transform="translate(600, 245)">
+      <!-- Pill 1 -->
+      <rect x="-240" y="0" width="140" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="-170" y="18" font-family="sans-serif" font-size="12" font-weight="600" fill="#38bdf8">⚡ Declarative IaC</text>
+
+      <!-- Pill 2 -->
+      <rect x="-85" y="0" width="170" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="0" y="18" font-family="sans-serif" font-size="12" font-weight="600" fill="#a78bfa">🔄 Imperative Versioning</text>
+
+      <!-- Pill 3 -->
+      <rect x="100" y="0" width="140" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="170" y="18" font-family="sans-serif" font-size="12" font-weight="600" fill="#4ade80">🛡️ Database CI/CD</text>
+    </g>
+  </g>
+</svg>
