@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Database-Schema-Migration/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Database-Schema-Migration?style=flat-square" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Database-Schema-Migration/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Database-Schema-Migration?style=flat-square" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Database-Schema-Migration/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Database-Schema-Migration?style=flat-square" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Database-Schema-Migration/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Database-Schema-Migration?style=flat-square" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -55,9 +55,9 @@ Below is a comparison of leading SaaS and enterprise platforms for Database Sche
 
 The open-source ecosystem provides battle-tested, developer-first migration tools across multiple paradigms (Declarative, Imperative, ORM-Integrated, and Script-Based).
 
-The projects below are sorted by **GitHub Star Count (descending)** 🌟:
+The projects below are sorted by **GitHub Stars_Count (descending)** 🌟:
 
-| Repository 📦 | GitHub Stars ⭐ | Paradigm / Type ⚙️ | Description & Key Features 📝 |
+| Repository 📦 | GitHub_Stars ⭐ | Paradigm / Type ⚙️ | Description & Key Features 📝 |
 | :--- | :--- | :--- | :--- |
 | **[Prisma Migrate](https://github.com/prisma/prisma)** 🔷 | [<img src="https://img.shields.io/badge/stars-47.7k-white?style=social&logo=github" alt="Prisma Stars"/>](https://github.com/prisma/prisma/stargazers) | ORM-Integrated | **Hybrid declarative/imperative TypeScript tool.** Generates editable versioned `.sql` migrations directly from declarative Prisma schema definitions. Ideal for Node.js / TypeScript applications. |
 | **[Drizzle Kit](https://github.com/drizzle-team/drizzle-orm)** 🌧️ | [<img src="https://img.shields.io/badge/stars-35.9k-white?style=social&logo=github" alt="Drizzle Stars"/>](https://github.com/drizzle-team/drizzle-orm/stargazers) | ORM-Integrated | **TypeScript-first declarative migration CLI for Drizzle ORM.** Automatic SQL migration file generation, schema push, and zero-overhead TypeScript schema definitions. |
